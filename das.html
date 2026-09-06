@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Soldier Tracking Dashboard</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="das.css">
+
+    <link rel="stylesheet" href="das.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="topbar">
+
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text"
+                placeholder="Search soldier (Name / ID / Unit)...">
+        </div>
+
+        <div class="top-right">
+
+            <div class="notification">
+                <i class="fa-solid fa-bell"></i>
+                <span>3</span>
+            </div>
+
+            <div class="date-time">
+                <i class="fa-regular fa-calendar"></i>
+                <div>
+                    <strong>Tue, 3 Sep 2025</strong>
+                    <p>14:32:18</p>
+                </div>
+            </div>
+
+            <div class="officer">
+                <div class="avatar">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div>
+                    <strong>Commanding Officer</strong>
+                    <p>Eastern Command</p>
+                </div>
+            </div>
+
+            <div class="jai-hind">
+                Jai Hind 🇮🇳
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main>
+
+        <!-- TITLE -->
+
+        <section class="dashboard-title">
+
+            <div>
+                <h1>Soldier Tracking Dashboard</h1>
+                <p>Real-time location, safety and mission monitoring</p>
+            </div>
+
+
+            <!-- STATISTICS -->
+
+            <div class="stats">
+
+                <div class="stat-card green">
+                    <i class="fa-solid fa-users"></i>
+
+                    <div>
+                        <h2>120</h2>
+                        <p>Total Soldiers</p>
+                    </div>
+                </div>
+
+
+                <div class="stat-card blue">
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+                        <h2>112</h2>
+                        <p>Active (Online)</p>
+                    </div>
+                </div>
+
+
+                <div class="stat-card orange">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+
+                    <div>
+                        <h2>4</h2>
+                        <p>In Alert</p>
+                    </div>
+                </div>
+
+
+                <div class="stat-card dark">
+                    <i class="fa-solid fa-wifi"></i>
+
+                    <div>
+                        <h2>4</h2>
+                        <p>Offline</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= TOP GRID ================= -->
+
+        <section class="top-grid">
+
+
+            <!-- MAP -->
+
+            <div class="card map-card">
+
+                <div class="card-header">
+                    <h2>Live Location Tracking</h2>
+
+                    <button>
+                        Satellite View
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+
+
+                <div class="map">
+
+                    <img class="gps-image" src="gps pic.jpeg" alt="GPS tracking map">
+
+                    <!-- Map Controls -->
+
+                    <div class="map-controls">
+                        <button>+</button>
+                        <button>−</button>
+                        <button>
+                            <i class="fa-solid fa-crosshairs"></i>
+                        </button>
+                    </div>
+
+
+                    <!-- Soldier Locations -->
+
+                    <div class="soldier s1 active">
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        
+
+
+                    
+                    </div>
+
+
+                   
+
+                    <!-- Base Camp -->
+
+                    <div class="base-camp">
+                        <i class="fa-solid fa-tent"></i>
+                        <span>Forward Base<br>(Alpha)</span>
+                    </div>
+
+
+                    <!-- Legend -->
+
+                    <div class="legend">
+
+                        <div>
+                            <span class="dot green-dot"></span>
+                            Active
+                        </div>
+
+                        <div>
+                            <span class="dot blue-dot"></span>
+                            Moving
+                        </div>
+
+                        <div>
+                            <span class="dot red-dot"></span>
+                            Alert
+                        </div>
+
+                        <div>
+                            <span class="dot yellow-dot"></span>
+                            Offline
+                        </div>
+
+                    </div>
+
+
+                    <div class="scale">
+                        0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10 km
+                        <div></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SOLDIER STATUS -->
+
+            <div class="card soldier-status">
+
+                <div class="card-header">
+                    <h2>Soldier Status</h2>
+                    <a href="#">View All →</a>
+                </div>
+
+
+                <div class="status-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search soldier...">
+                </div>
+
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Rank</th>
+                            <th>Location</th>
+                            <th>Status</th>
+                            <th>Battery</th>
+                        </tr>
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+                            <td>S-076</td>
+                            <td>Vikram Yadav</td>
+                            <td>Havildar</td>
+                            <td>34.531 N<br>77.5612 E</td>
+
+                            <td>
+                                <span class="status alert-status">
+                                    ● Alert
+                                </span>
+                            </td>
+
+                            <td>🔋 20%</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>S-087</td>
+                            <td>Aman Verma</td>
+                            <td>Naik</td>
+                            <td>34.5210 N<br>77.5480 E</td>
+
+                            <td>
+                                <span class="status moving-status">
+                                    ● Moving
+                                </span>
+                            </td>
+
+                            <td>🔋 65%</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>S-093</td>
+                            <td>Arjun Mehta</td>
+                            <td>Sepoy</td>
+                            <td>34.5098 N<br>77.5512 E</td>
+
+                            <td>
+                                <span class="status active-status">
+                                    ● Active
+                                </span>
+                            </td>
+
+                            <td>🔋 80%</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>S-104</td>
+                            <td>Rohit Singh</td>
+                            <td>Havildar</td>
+                            <td>34.5401 N<br>77.4987 E</td>
+
+                            <td>
+                                <span class="status active-status">
+                                    ● Active
+                                </span>
+                            </td>
+
+                            <td>🔋 72%</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>S-065</td>
+                            <td>Karan Thapa</td>
+                            <td>Sepoy</td>
+                            <td>34.5005 N<br>77.5333 E</td>
+
+                            <td>
+                                <span class="status offline-status">
+                                    ● Offline
+                                </span>
+                            </td>
+
+                            <td>🔋 10%</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= SECOND GRID ================= -->
+
+        <section class="middle-grid">
+
+
+            <!-- MISSION OVERVIEW -->
+
+            <div class="card mission-card">
+
+                <div class="card-header">
+                    <h2>Mission Overview</h2>
+                </div>
+
+
+                <div class="mission-grid">
+
+                    <div class="mission-item">
+                        <i class="fa-solid fa-bullseye green-icon"></i>
+
+                        <div>
+                            <h2>3</h2>
+                            <p>Active Missions</p>
+                        </div>
+                    </div>
+
+
+                    <div class="mission-item">
+                        <i class="fa-solid fa-flag green-icon"></i>
+
+                        <div>
+                            <h2>1</h2>
+                            <p>Completed Today</p>
+                        </div>
+                    </div>
+
+
+                    <div class="mission-item">
+                        <i class="fa-solid fa-clock blue-icon"></i>
+
+                        <div>
+                            <h2>2</h2>
+                            <p>Upcoming Missions</p>
+                        </div>
+                    </div>
+
+
+                    <div class="mission-item">
+                        <i class="fa-solid fa-users blue-icon"></i>
+
+                        <div>
+                            <h2>120</h2>
+                            <p>Personnel Deployed</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- GEOFENCE ALERTS -->
+
+            <div class="card geofence-card">
+
+                <div class="card-header">
+                    <h2>Geofence Alerts</h2>
+                    <a href="#">View All →</a>
+                </div>
+
+
+                <div class="alert-row">
+                    <span class="red">●</span>
+                    <span>10:25 AM</span>
+                    <strong>S-076 crossed restricted zone</strong>
+                    <span class="priority high">High</span>
+                </div>
+
+
+                <div class="alert-row">
+                    <span class="red">●</span>
+                    <span>08:12 AM</span>
+                    <strong>S-065 no movement (30 mins)</strong>
+                    <span class="priority medium">Medium</span>
+                </div>
+
+
+                <div class="alert-row">
+                    <span class="blue-text">●</span>
+                    <span>06:40 AM</span>
+                    <strong>S-093 reached checkpoint</strong>
+                    <span class="priority info">Info</span>
+                </div>
+
+
+                <div class="alert-row">
+                    <span class="blue-text">●</span>
+                    <span>05:18 AM</span>
+                    <strong>S-104 low battery (20%)</strong>
+                    <span class="priority medium">Medium</span>
+                </div>
+
+            </div>
+
+
+
+            <!-- HEALTH STATUS -->
+
+            <div class="card health-card">
+
+                <div class="card-header">
+                    <h2>
+                        <i class="fa-solid fa-heart"></i>
+                        Health Status
+                    </h2>
+
+                    <a href="#">View All →</a>
+                </div>
+
+
+                <div class="health-content">
+
+                    <div class="health-circle">
+                        <div>
+                            <h1>120</h1>
+                            <p>Soldiers</p>
+                        </div>
+                    </div>
+
+
+                    <div class="health-list">
+
+                        <p>
+                            <span class="dot green-dot"></span>
+                            Healthy
+                            <strong>110 (92%)</strong>
+                        </p>
+
+                        <p>
+                            <span class="dot yellow-dot"></span>
+                            Under Observation
+                            <strong>6 (5%)</strong>
+                        </p>
+
+                        <p>
+                            <span class="dot red-dot"></span>
+                            Medical Attention
+                            <strong>4 (3%)</strong>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= BOTTOM GRID ================= -->
+
+        <section class="bottom-grid">
+
+
+            <!-- RECENT ACTIVITIES -->
+
+            <div class="card activities-card">
+
+                <div class="card-header">
+                    <h2>Recent Activities</h2>
+                    <a href="#">View All →</a>
+                </div>
+
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Soldier ID</th>
+                            <th>Activity</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+                            <td>10:25 AM</td>
+                            <td>S-076</td>
+                            <td>Entered restricted zone</td>
+                            <td>34.5321 N, 77.5612 E</td>
+                        </tr>
+
+                        <tr>
+                            <td>10:10 AM</td>
+                            <td>S-087</td>
+                            <td>Patrol in progress</td>
+                            <td>34.5210 N, 77.5480 E</td>
+                        </tr>
+
+                        <tr>
+                            <td>09:45 AM</td>
+                            <td>S-093</td>
+                            <td>Reached checkpoint</td>
+                            <td>Alpha-3</td>
+                        </tr>
+
+                        <tr>
+                            <td>08:30 AM</td>
+                            <td>S-065</td>
+                            <td>No movement detected</td>
+                            <td>34.5005 N, 77.5333 E</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+
+            <!-- COMMUNICATION -->
+
+            <div class="card communication-card">
+
+                <div class="card-header">
+                    <h2>Communication</h2>
+                    <a href="#">→</a>
+                </div>
+
+
+                <div class="communication-grid">
+
+                    <button>
+                        <i class="fa-solid fa-tower-broadcast"></i>
+                        Send Message
+                    </button>
+
+                    <button>
+                        <i class="fa-solid fa-bullhorn"></i>
+                        Broadcast Alert
+                    </button>
+
+                    <button>
+                        <i class="fa-solid fa-users"></i>
+                        Call Unit
+                    </button>
+
+                    <button>
+                        <i class="fa-solid fa-file-lines"></i>
+                        Mission Update
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RIGHT SIDE -->
+
+            <div class="right-column">
+
+
+                <!-- QUICK ACTIONS -->
+
+                <div class="card quick-actions">
+
+                    <div class="card-header">
+                        <h2>Quick Actions</h2>
+                    </div>
+
+
+                    <div class="action-grid">
+
+                        <button>
+                            <i class="fa-solid fa-bell red-icon"></i>
+                            Trigger SOS
+                        </button>
+
+                        <button>
+                            <i class="fa-solid fa-location-dot green-icon"></i>
+                            Add Geofence
+                        </button>
+
+                        <button>
+                            <i class="fa-solid fa-code-branch blue-icon"></i>
+                            Plan Route
+                        </button>
+
+                        <button>
+                            <i class="fa-solid fa-users purple-icon"></i>
+                            View Units
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FOOTER BANNER -->
+
+                <div class="military-banner">
+
+                    <h2>STRONGER TOGETHER<br>SAFER TOMORROW</h2>
+
+                    <div class="tricolor"></div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
