@@ -1,0 +1,1375 @@
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #071d20,
+            #0b2528
+        );
+
+    color: #e7eeee;
+
+    min-height: 100vh;
+}
+
+
+/* ================= TOP BAR ================= */
+
+.topbar {
+
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 20px;
+
+    background: #10292d;
+
+    border-bottom: 1px solid #294247;
+
+}
+
+
+.menu {
+
+    font-size: 22px;
+
+    margin-right: 30px;
+
+    color: #d7e1e2;
+
+    cursor: pointer;
+
+}
+
+
+/* SEARCH */
+
+.search-box {
+
+    display: flex;
+    align-items: center;
+
+    width: 450px;
+
+    background: #1a3438;
+
+    border: 1px solid #456066;
+
+    border-radius: 25px;
+
+    padding: 10px 15px;
+
+}
+
+
+.search-box i {
+
+    color: #9baeb0;
+
+    margin-right: 10px;
+
+}
+
+
+.search-box input {
+
+    background: transparent;
+
+    border: none;
+
+    outline: none;
+
+    color: white;
+
+    width: 100%;
+
+}
+
+
+.search-box input::placeholder {
+
+    color: #a3b2b5;
+
+}
+
+
+/* RIGHT HEADER */
+
+.top-right {
+
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+}
+
+
+.notification {
+
+    position: relative;
+
+    font-size: 20px;
+
+}
+
+
+.notification span {
+
+    position: absolute;
+
+    top: -10px;
+    right: -12px;
+
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e63939;
+
+    border-radius: 50%;
+
+    font-size: 11px;
+
+}
+
+
+.date-time,
+.officer {
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.date-time i {
+
+    font-size: 20px;
+
+}
+
+
+.date-time p,
+.officer p {
+
+    margin-top: 5px;
+
+    font-size: 12px;
+
+    color: #a7b6b8;
+
+}
+
+
+.avatar {
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #344b3b;
+
+}
+
+
+.jai-hind {
+
+    font-size: 14px;
+
+}
+
+
+/* ================= MAIN ================= */
+
+main {
+
+    padding: 15px 10px 25px;
+
+}
+
+
+/* ================= DASHBOARD TITLE ================= */
+
+.dashboard-title {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 12px;
+
+}
+
+
+.dashboard-title h1 {
+
+    font-size: 28px;
+
+    margin-bottom: 6px;
+
+}
+
+
+.dashboard-title p {
+
+    color: #b7c3c5;
+
+    font-size: 16px;
+
+}
+
+
+/* ================= STAT CARDS ================= */
+
+.stats {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+
+.stat-card {
+
+    width: 170px;
+    height: 76px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+
+    border-radius: 7px;
+
+    border: 1px solid #3d5055;
+
+}
+
+
+.stat-card i {
+
+    font-size: 28px;
+
+}
+
+
+.stat-card h2 {
+
+    font-size: 22px;
+
+}
+
+
+.stat-card p {
+
+    font-size: 12px;
+
+    margin-top: 5px;
+
+}
+
+
+.green {
+
+    background: #123a34;
+
+    border-color: #2d7564;
+
+}
+
+.green i {
+    color: #56d88b;
+}
+
+
+.blue {
+
+    background: #122f4a;
+
+    border-color: #346b9c;
+
+}
+
+.blue i {
+    color: #65a7ed;
+}
+
+
+.orange {
+
+    background: #382d1c;
+
+    border-color: #8c6533;
+
+}
+
+.orange i {
+    color: #ffae50;
+}
+
+
+.dark {
+
+    background: #15292d;
+
+}
+
+
+/* ================= COMMON CARD ================= */
+
+.card {
+
+    background: #10272b;
+
+    border: 1px solid #2d4448;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+}
+
+
+.card-header {
+
+    height: 42px;
+
+    padding: 0 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #2c4448;
+
+}
+
+
+.card-header h2 {
+
+    font-size: 18px;
+
+}
+
+
+.card-header a {
+
+    text-decoration: none;
+
+    color: #77a8d8;
+
+    font-size: 13px;
+
+}
+
+
+.card-header button {
+
+    background: #183034;
+
+    color: white;
+
+    border: 1px solid #40585d;
+
+    padding: 8px 12px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+
+/* ================= TOP GRID ================= */
+
+.top-grid {
+
+    display: grid;
+
+    grid-template-columns: 60% 40%;
+
+    gap: 10px;
+
+}
+
+
+/* ================= MAP ================= */
+
+.map {
+
+    height: 390px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 30% 40%,
+            rgba(73, 112, 88, .5),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 70% 30%,
+            rgba(47, 78, 59, .7),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            #17352f,
+            #344438,
+            #182c29
+        );
+
+}
+
+
+.map::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    opacity: .4;
+
+    background-image:
+
+        repeating-linear-gradient(
+            120deg,
+            transparent,
+            transparent 25px,
+            rgba(255,255,255,.08) 26px,
+            transparent 28px
+        );
+
+}
+
+
+.gps-image {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border: none;
+    border-radius: 0;
+
+    z-index: 1;
+
+}
+
+
+/* MAP CONTROLS */
+
+.map-controls {
+
+    position: absolute;
+
+    top: 50px;
+    left: 15px;
+
+    z-index: 3;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+
+}
+
+
+.map-controls button {
+
+    width: 34px;
+    height: 34px;
+
+    border: none;
+
+    background: #e8eeee;
+
+    color: #233438;
+
+    font-size: 20px;
+
+    border-radius: 4px;
+
+}
+
+
+/* SOLDIER MARKER */
+
+.soldier {
+
+    position: absolute;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    z-index: 2;
+
+}
+
+
+.soldier i {
+
+    font-size: 38px;
+
+}
+
+
+.soldier div {
+
+    padding: 7px 10px;
+
+    background: rgba(12, 24, 27, .9);
+
+    border-radius: 5px;
+
+    border: 1px solid #3d4c4e;
+
+    display: flex;
+
+    flex-direction: column;
+
+    font-size: 12px;
+
+}
+
+
+.active i {
+    color: #37cf67;
+}
+
+.moving i {
+    color: #4899e8;
+}
+
+.alert i {
+    color: #e33d3d;
+}
+
+.offline i {
+    color: #f5a623;
+}
+
+
+.s1 {
+    left: 20%;
+    top: 25%;
+}
+
+.s2 {
+    left: 41%;
+    top: 32%;
+}
+
+.s3 {
+    left: 63%;
+    top: 32%;
+}
+
+.s4 {
+    left: 32%;
+    top: 62%;
+}
+
+.s5 {
+    left: 58%;
+    top: 68%;
+}
+
+
+/* BASE CAMP */
+
+.base-camp {
+
+    position: absolute;
+
+    left: 38%;
+    top: 72%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 13px;
+
+}
+
+
+.base-camp i {
+
+    font-size: 32px;
+
+}
+
+
+/* LEGEND */
+
+.legend {
+
+    position: absolute;
+
+    right: 15px;
+    bottom: 15px;
+
+    padding: 12px;
+
+    background: rgba(10, 25, 28, .85);
+
+    border: 1px solid #3c5054;
+
+    border-radius: 5px;
+
+    font-size: 13px;
+
+}
+
+
+.legend div {
+
+    margin: 7px 0;
+
+}
+
+
+.dot {
+
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    margin-right: 8px;
+
+}
+
+
+.green-dot {
+    background: #22b955;
+}
+
+.blue-dot {
+    background: #288ce6;
+}
+
+.red-dot {
+    background: #df3636;
+}
+
+.yellow-dot {
+    background: #eaa515;
+}
+
+
+/* SCALE */
+
+.scale {
+
+    position: absolute;
+
+    left: 18px;
+    bottom: 15px;
+
+    font-size: 11px;
+
+}
+
+
+.scale div {
+
+    width: 125px;
+
+    border-bottom: 4px solid white;
+
+    margin-top: 4px;
+
+}
+
+
+/* ================= SOLDIER STATUS ================= */
+
+.status-search {
+
+    margin: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 9px;
+
+    background: #263c40;
+
+    border-radius: 5px;
+
+}
+
+
+.status-search i {
+
+    margin-right: 8px;
+
+}
+
+
+.status-search input {
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: white;
+
+    width: 100%;
+
+}
+
+
+/* ================= TABLE ================= */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 12px;
+
+}
+
+
+th {
+
+    text-align: left;
+
+    padding: 9px;
+
+    background: #142d31;
+
+}
+
+
+td {
+
+    padding: 9px;
+
+    border-top: 1px solid #33464a;
+
+}
+
+
+.status {
+
+    padding: 6px 10px;
+
+    border-radius: 15px;
+
+    font-size: 11px;
+
+}
+
+
+.alert-status {
+
+    color: #e34b4b;
+
+    background: #3d2628;
+
+}
+
+
+.moving-status {
+
+    color: #378ee9;
+
+    background: #253748;
+
+}
+
+
+.active-status {
+
+    color: #2ec45d;
+
+    background: #213a2b;
+
+}
+
+
+.offline-status {
+
+    color: #f0a41a;
+
+    background: #42371d;
+
+}
+
+
+/* ================= MIDDLE GRID ================= */
+
+.middle-grid {
+
+    display: grid;
+
+    grid-template-columns: 32% 34% 34%;
+
+    gap: 10px;
+
+    margin-top: 10px;
+
+}
+
+
+/* ================= MISSION ================= */
+
+.mission-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px;
+
+    padding: 10px;
+
+}
+
+
+.mission-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 14px;
+
+    background: #163034;
+
+    border-radius: 7px;
+
+}
+
+
+.mission-item i {
+
+    font-size: 30px;
+
+}
+
+
+.mission-item p {
+
+    font-size: 12px;
+
+    color: #c0cdcf;
+
+    margin-top: 5px;
+
+}
+
+
+.green-icon {
+
+    color: #28c66b;
+
+}
+
+.blue-icon {
+
+    color: #5c9ee8;
+
+}
+
+
+/* ================= GEOFENCE ================= */
+
+.alert-row {
+
+    display: grid;
+
+    grid-template-columns:
+        20px
+        80px
+        1fr
+        70px;
+
+    align-items: center;
+
+    padding: 10px 14px;
+
+    font-size: 12px;
+
+    border-bottom: 1px solid #31464a;
+
+}
+
+
+.red {
+
+    color: #e43d3d;
+
+}
+
+.blue-text {
+
+    color: #388ee9;
+
+}
+
+
+.priority {
+
+    text-align: center;
+
+    padding: 5px;
+
+    border-radius: 12px;
+
+}
+
+
+.high {
+
+    background: #4a282d;
+
+    color: #e68c91;
+
+}
+
+
+.medium {
+
+    background: #3c3520;
+
+    color: #d9a33d;
+
+}
+
+
+.info {
+
+    background: #253d54;
+
+    color: #6ca5db;
+
+}
+
+
+/* ================= HEALTH ================= */
+
+.health-content {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-around;
+
+    padding: 12px;
+
+}
+
+
+.health-circle {
+
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+
+        conic-gradient(
+            #20b34d 0deg 330deg,
+            #e9a61a 330deg 348deg,
+            #e23b3b 348deg 360deg
+        );
+
+}
+
+
+.health-circle::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 96px;
+    height: 96px;
+
+    border-radius: 50%;
+
+    background: #edf1ee;
+
+}
+
+
+.health-circle div {
+
+    z-index: 2;
+
+    color: #15252a;
+
+    text-align: center;
+
+}
+
+
+.health-circle p {
+
+    font-size: 11px;
+
+}
+
+
+.health-list p {
+
+    margin: 16px 0;
+
+    font-size: 12px;
+
+}
+
+
+.health-list strong {
+
+    margin-left: 20px;
+
+}
+
+
+/* ================= BOTTOM GRID ================= */
+
+.bottom-grid {
+
+    display: grid;
+
+    grid-template-columns: 42% 23% 35%;
+
+    gap: 10px;
+
+    margin-top: 10px;
+
+}
+
+
+/* ================= COMMUNICATION ================= */
+
+.communication-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px;
+
+    padding: 10px;
+
+}
+
+
+.communication-grid button {
+
+    height: 75px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #dce6ec;
+
+    color: #233136;
+
+    cursor: pointer;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+}
+
+
+.communication-grid i {
+
+    font-size: 25px;
+
+}
+
+
+/* ================= QUICK ACTIONS ================= */
+
+.action-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 8px;
+
+    padding: 10px;
+
+}
+
+
+.action-grid button {
+
+    height: 70px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #e5e7eb;
+
+    color: #263337;
+
+    cursor: pointer;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+}
+
+
+.action-grid i {
+
+    font-size: 23px;
+
+}
+
+
+.red-icon {
+
+    color: #e33434;
+
+}
+
+.purple-icon {
+
+    color: #8549b8;
+
+}
+
+
+/* ================= BANNER ================= */
+
+.military-banner {
+
+    margin-top: 10px;
+
+    height: 84px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 7px;
+
+    border: 1px solid #30464a;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #13272c,
+            #101c24
+        );
+
+}
+
+
+.military-banner h2 {
+
+    text-align: center;
+
+    font-size: 16px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.tricolor {
+
+    margin-top: 8px;
+
+    width: 85px;
+    height: 4px;
+
+    background:
+
+        linear-gradient(
+            to right,
+            #ff8b2a 33%,
+            white 33% 66%,
+            #29a95a 66%
+        );
+
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1100px) {
+
+    .top-grid,
+    .middle-grid,
+    .bottom-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .stats {
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .top-right {
+
+        display: none;
+
+    }
+
+
+    .dashboard-title {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .search-box {
+
+        width: 250px;
+
+    }
+
+
+    .dashboard-title h1 {
+
+        font-size: 22px;
+
+    }
+
+
+    .stats {
+
+        width: 100%;
+
+    }
+
+
+    .stat-card {
+
+        width: calc(50% - 5px);
+
+    }
+
+
+    .mission-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .action-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .health-content {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+}
